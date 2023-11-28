@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    color: #333;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 10px;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5em;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #eee;
+}
+.non-clickable {
+    pointer-events: none;
+    opacity: 0.6; /* You can adjust the opacity to visually indicate it's not clickable */
+    cursor: not-allowed;
+}
+.bold{
+    font-weight: bolder;
+}
+.reset{
+    margin-top: 10px;
+    
+}
